@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Positioning Demo 3</title>
+    <style>
+        #main {
+            width: 350px;
+            height: 300px;
+            margin-top: 200px;
+            border: 1px solid #000;
+            padding: 20px;
+            background: lightblue;
+            position: relative;
+        }
+        
+        .container {
+            width: 300px;
+            border: 1px solid #000;
+            padding: 20px;
+            background: #CCC;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        I'm parent div
+        <div class="container">
+            i'm child div
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS empty-cells property</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+        }
+        
+        table.empty-show {
+            empty-cells: show;
+        }
+        
+        table.empty-hide {
+            empty-cells: hide;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table with Visible Empty-cells</h2>
+    <table class="empty-show">
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <td>HTML By Example</td>
+            <td>Beginning CSS</td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Table with Hidden Empty-cells</h2>
+    <table class="empty-hide">
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <td>HTML In 24 Hours</td>
+            <td>Effective CSS</td>
+            <td></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
